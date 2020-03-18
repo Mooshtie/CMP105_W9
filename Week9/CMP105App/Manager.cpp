@@ -59,6 +59,10 @@ void Manager::spawn()
 	balls[balls.size() - 1].setSize(sf::Vector2f(100, 100));
 	balls[balls.size() - 1].setVelocity(rand() % 200 - 100, rand() % 200 - 100);
 	balls[balls.size() - 1].setPosition(spawnPoint);
+
+	//adds to counter and outputs it
+	counter++;
+	std::cout << counter << "\n";
 }
 
 void Manager::deathCheck()
